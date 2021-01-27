@@ -2,7 +2,7 @@ import express from 'express';
 import cors from 'cors';
 
 const app = express();
-const port = 8040;
+const port = 80;
 
 // cors : entete "Access-Control-Allow-Origin"
 app.use(cors());
