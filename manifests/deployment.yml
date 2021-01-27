@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: jeremyvanackereimagedocker 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: jeremyvanackereimagedocker
+  template:
+    metadata:
+      labels:
+        app: jeremyvanackereimagedocker 
+    spec:
+      containers:
+        - name: jeremyvanackereimagedocker 
+          image: enigmadevopsjeremy.azurecr.io/jeremyvanackereimagedocker
+          ports:
+          - containerPort: 80
